@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+*{
+    font-family: "Baloo Bhai 2", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navmain{
+   display: flex;
+   justify-content: space-between;
+}
+.navmain ul {
+   display: flex;             
+   list-style: none;
+   gap: 20px;                  
+   margin: 0;
+   padding: 0;
+}
+.navmain ul li{
+   list-style: none;
+   gap:20px;
+   font-size: 25px; 
+   font-weight: 500;
+    align-items: center;
+   padding: 8px 20px; 
+}
+.navmain ul li:hover{
+   color: white;
+   height: 50px;   
+   background-color: chartreuse;
+   border-radius: 15px;
+}
+ .heroimg{
+    margin-left: 189px;
+    padding: 34px;
+ }
+ .hero{
+    
+    display: flex;
+    background-color: rgb(178, 228, 61);
+    justify-content: center;
+    align-items: center;
+ }
+ .heroword span{
+    height: auto;
+    width: 80px;
+    font-size: 100px;
+    line-height: 1;
+    font-weight: 600;
+    
+ }
+ .button1{
+    position: relative;
+    margin-top: 50px;
+  font-size: 22px;
+
+  padding:  16px 32px 12px;
+   margin-left: 342px;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: rgb(8, 10, 5);
+    color: white;
+
+
+
+ }
+  .IMPPART{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+
+ }
+ .imp{
+    display: flex;
+       position: relative;
+  
+    height: 116px;
+    margin-left: 100px;
+    width: 350px;
+    top: 100px;
+
+    
+ }
+ .img1{
+    Width:83px;
+    
+margin-right: 20px;
+
+
+ }
+ .text1 span{
+    margin-top: 0px;
+    font-weight: 600;
+    font-size: 25px;
+ }
+  .text1 p {
+    margin-top: 0px;
+    line-height:1;
+    font-size: 16px;
+ }
+ .button2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   margin-top: 110px;
+   
+   
+ }
+ button{
+    padding:  18px 36px 12px;
+   background-color: black;
+   color: white;
+   border-radius: 8px;
+   font-weight: 600;
+   font-size: 24px;
+
+ }
+ button a:hover{
+   cursor: pointer;
+ }
+ 
+ .explore{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 38px;
+   font-size: 50px;
+   font-weight: 400;
+ }
+ .maingrid{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+ }
+
+ .grid{
+  
+   display: grid;
+   gap: 14px;
+   grid-template-areas: " I1 I1 I2 I3 "
+   "I1 I1 I2 I7"
+   "I4 I5 I6 I7";
+  
+   
+ }
+.image1{
+   grid-area: I1;
+
+}
+.image2{
+   grid-area: I2;
+
+}
+.image3{
+   grid-area: I3;
+
+}
+.image4{
+   grid-area: I4;
+
+}
+.image5{
+   grid-area: I5;
+
+}
+.image6{
+   grid-area: I6;
+
+}
+.image7{
+   grid-area: I7;
+
+}
+.grid img{
+   border-radius: 12px;
+   transition: 0.2s ease-in-out;
+}
+.grid img:hover{
+   transform: scale(1.05);
+   transition: 0.2s ease-out;
+
+}
+.background{
+  
+   display: flex;
+   background-color: beige;
+   margin-top: 110px;
+  width: 100%;
+  padding: 20px;
+
+}
+.inp{
+   padding: 2px 20px;
+}
+footer .footerg{
+column-gap: 300px;
+ width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   
+}
+.jn{
+   line-height: 2;
+   
+}
+.last{  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  height: auto;
+  box-sizing: border-box;
+}
+.imgcom{
+   display: flex;
+   height: 80px;
+}
+.footerg span{
+   font-size: 26px;
+   font-weight: 600;
+   margin:0;
+   padding: 0;
+   color: gray;
+
+}
+.footerg ul li{
+   list-style: none;
+   color: gray;
+  font-size: 18px; 
+}
+
+button:hover{
+   transform: scale(1.05);
+   background-color:blue;
+   cursor: pointer;
+}
+
+.heroimg:hover{
+   transform: scale(1.2);
+   transition: 2s ;
+}
+/* Tablets and below (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .navmain {
+   
+    overflow-x: hidden; 
+    flex-direction: column;
+    align-items: center;
+    
+    
+  }
+  .navmain img{
+   height:100px ;
+   width:250px ;
+  }
+
+  .navmain ul {
+  display: flex;
+  flex-direction: row; 
+  overflow-x: auto;    
+  white-space: nowrap; 
+  gap: 10px;
+  padding: 10px;
+  max-width: 100%;    
+}
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroword span {
+    font-size: 60px;
+  }
+
+  .heroimg {
+    margin-left: 0;
+    padding: 20px;
+    transform: scale(0.8);
+  }
+
+  .button1 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .IMPPART {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .imp {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-areas:
+      "I1 I1 I2 I2"
+      "I3 I4 I5 I5"
+      "I6 I6 I7 I7";
+  }
+
+  footer .footerg {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    padding: 20px;
+  }
+
+  .last {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 770px) {
+  .heroword span {
+    font-size: 40px;
+  }
+
+  .button1 {
+    font-size: 18px;
+    padding: 12px 24px 10px;
+  }
+
+  .IMPPART {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .explore {
+    font-size: 32px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .grid {
+     display: grid;
+  grid-template-columns: 1fr 1fr;  
+  gap: 6px;
+  justify-items: center;
+  }
+  .grid img{
+      
+  width: 230px;             
+  max-width: 100%;        
+  height:230px;            
+  border-radius: 8px;
+  object-fit: cover; 
+  }
+footer {
+    width: 100%;
+    
+  }
+
+    footer .footerg {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 0;
+  }
+
+
+  .footerg span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .footerg ul li {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .imgcom {
+    justify-self: start;
+  }
+}
